@@ -21,6 +21,13 @@
   
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌶️</text></svg>">
+
+  <!-- Fallback for file:// protocol (local double-click) when ES modules are blocked by CORS -->
+  <script>
+    if (window.location.protocol === 'file:') {
+      document.write('<style>.reveal { opacity: 1 !important; transform: none !important; transition: none !important; }</style>');
+    }
+  </script>
 </head>
 <body>
 
