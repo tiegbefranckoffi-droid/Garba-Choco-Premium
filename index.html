@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GarbaExpress - Garba Premium & Livraison 100% Digitale à Sassandra</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Découvrez GarbaExpress, le premier service 100% digital de livraison de Garba premium à Sassandra. Attiéké frais, poisson thon croustillant et piment bien dosé livré chaud chez vous en moins de 30 min.">
+  <meta name="keywords" content="Garba, GarbaExpress, Sassandra, livraison, Côte d'Ivoire, Attiéké, Thon, piment, nourriture, digital">
+  <meta name="author" content="GarbaExpress">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="GarbaExpress - Garba Premium & Livraison Digitale à Sassandra">
+  <meta property="og:description" content="Commandez le premier Garba 100% digital de Côte d'Ivoire. Préparé avec amour, livré chaud en moins de 30 minutes à Sassandra.">
+  <meta property="og:image" content="assets/hero_garba.png">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌶️</text></svg>">
+</head>
+<body>
+
+  <!-- Background Blobs -->
+  <div class="glow-blob glow-blob-orange" style="top: 10%; left: -100px;"></div>
+  <div class="glow-blob glow-blob-red" style="top: 50%; right: -150px;"></div>
+  <div class="glow-blob glow-blob-orange" style="bottom: 10%; left: 30%;"></div>
+
+  <!-- ==========================================================================
+       Header & Navigation
+       ========================================================================== -->
+  <header class="header" id="main-header">
+    <div class="container nav-container">
+      <a href="#" class="logo" id="header-logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/>
+        </svg>
+        <span>Garba<span class="logo-accent">Express<span class="logo-dot">.</span></span></span>
+      </a>
+      
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#concept" class="nav-link" id="link-concept">Concept</a>
+        <a href="#tarifs" class="nav-link" id="link-tarifs">Formules</a>
+        <a href="#temoignages" class="nav-link" id="link-temoignages">Avis</a>
+        <a href="#faq" class="nav-link" id="link-faq">FAQ</a>
+        <a href="#contact" class="nav-link" id="link-contact">Contact</a>
+      </nav>
+      
+      <div class="nav-actions">
+        <button class="btn btn-primary js-open-order" data-formula="premium" id="btn-header-cta" style="padding: 10px 20px; font-size: 0.85rem; border-radius: var(--radius-sm);">
+          Commander en 1 Clic
+        </button>
+      </div>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Hero Section
+       ========================================================================== -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content reveal">
+        <div class="hero-tagline">
+          <span class="hero-tagline-dot"></span>
+          100% digital &middot; Sassandra
+        </div>
+        <h1 class="hero-title">
+          Le Garba <span class="text-gradient-primary">Premium</span> de Sassandra, Livré en un Clic.
+        </h1>
+        <p class="hero-desc">
+          Fini l'attente interminable au garbadrome. Commandez le premier Garba 100% propre de Côte d'Ivoire. Attiéké ultra-frais, poisson thon croustillant et assortiment de piments frais livrés en sac isotherme.
+        </p>
+        <div class="hero-btns">
+          <button class="btn btn-primary js-open-order" data-formula="premium" id="btn-hero-cta">
+            Commander Maintenant
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+          <a href="#tarifs" class="btn btn-secondary" id="btn-hero-secondary">
+            Voir le Menu
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h3><span class="js-counter" data-target="30">30</span>'</h3>
+            <p>Livraison Max</p>
+          </div>
+          <div class="stat-item">
+            <h3>100%</h3>
+            <p>Attiéké Local</p>
+          </div>
+          <div class="stat-item">
+            <h3>4.9★</h3>
+            <p>Note clients</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-media reveal reveal-delay-2">
+        <div class="hero-img-container">
+          <img src="assets/hero_garba.png" alt="Plat Premium de GarbaExpress" id="hero-main-img">
+        </div>
+        
+        <!-- Floating status badges -->
+        <div class="floating-badge floating-badge-1" id="badge-shipping">
+          <div class="badge-icon">
+            🛵
+          </div>
+          <div class="badge-info">
+            <h4>Sassandra Plage</h4>
+            <p>Livré en 22 min</p>
+          </div>
+        </div>
+        
+        <div class="floating-badge floating-badge-2" id="badge-quality">
+          <div class="badge-icon badge-icon-secondary">
+            🐟
+          </div>
+          <div class="badge-info">
+            <h4>Poisson Premium</h4>
+            <p>100% Thon Frais</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Section "Comment ça marche"
+       ========================================================================== -->
+  <section class="section" id="concept">
+    <div class="container">
+      <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+        <span class="section-tag">Concept</span>
+        <h2 class="section-title">Comment ça marche ?</h2>
+        <p class="section-desc">Votre Garba chaud et croustillant en 3 étapes simples et rapides, directement chez vous ou au bureau.</p>
+      </div>
+      
+      <div class="steps-grid">
+        <div class="step-card reveal" id="step-1">
+          <div class="step-number">01</div>
+          <h3>Sélectionnez votre Formule</h3>
+          <p>Choisissez la quantité de thon et d'attiéké qui vous convient. Personnalisez votre dosage de piment et ajoutez des extras gourmands (avocat, alloco, boisson).</p>
+        </div>
+        
+        <div class="step-card reveal reveal-delay-1" id="step-2">
+          <div class="step-number">02</div>
+          <h3>Commandez en Ligne</h3>
+          <p>Validez votre commande en quelques clics via notre simulateur. Pas de création de compte obligatoire. Choisissez le paiement cash ou Mobile Money.</p>
+        </div>
+        
+        <div class="step-card reveal reveal-delay-2" id="step-3">
+          <div class="step-number">03</div>
+          <h3>Livraison en Express</h3>
+          <p>Nos livreurs parcourent Sassandra pour vous livrer un repas chaud et parfaitement emballé dans des récipients étanches en moins de 30 minutes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Section Tarifs
+       ========================================================================== -->
+  <section class="section" id="tarifs" style="background-color: var(--dark-surface);">
+    <div class="container">
+      <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+        <span class="section-tag">Menu & Tarifs</span>
+        <h2 class="section-title">Nos Formules Premium</h2>
+        <p class="section-desc">Des ingrédients de qualité supérieure, un attiéké tamisé avec soin et du thon sélectionné chaque matin.</p>
+      </div>
+      
+      <div class="pricing-grid">
+        <!-- Plan 1 -->
+        <div class="price-card reveal" id="price-classique">
+          <div class="price-header">
+            <h3 class="price-name">Le Classique (Dahico)</h3>
+            <div class="price-amount">1 500 <span>FCFA</span></div>
+          </div>
+          <ul class="price-features">
+            <li>
+              <span class="feature-icon">✓</span>
+              <span>1 Beau morceau de thon croustillant</span>
+            </li>
+            <li>
+              <span class="feature-icon">✓</span>
+              <span>Attiéké classique tamisé</span>
+            </li>
+            <li>
+              <span class="feature-icon">✓</span>
+              <span>Oignons doux & Piment rouge</span>
+            </li>
+            <li class="disabled">
+              <span class="feature-icon">✗</span>
+              <span>Banane Alloco dorée</span>
+            </li>
+            <li class="disabled">
+              <span class="feature-icon">✗</span>
+              <span>Avocat crémeux tranché</span>
+            </li>
+          </ul>
+          <button class="btn btn-secondary price-cta js-open-order" data-formula="classique" id="btn-order-classique">
+            Choisir le Dahico
+          </button>
+        </div>
+        
+        <!-- Plan 2 -->
+        <div class="price-card price-card-popular reveal reveal-delay-1" id="price-premium">
+          <div class="popular-badge">Populaire &starf;</div>
+          <div class="price-header">
+            <h3 class="price-name">Le GarbaExpress</h3>
+            <div class="price-amount">3 000 <span>FCFA</span></div>
+          </div>
+          <ul class="price-features">
+            <li>
+              <span class="feature-icon">✓</span>
+              <span>2 Morceaux de thon premium</span>
+            </li>
+            <li>
+              <span class="feature-icon">✓</span>
+              <span>Attiéké extra-fin et oignons frits</span>
+            </li>
+            <li>
+              <span class="feature-icon">✓</span>
+              <span>Mélange de piments frais & Tomates</span>
+            </li>
+            <li>
+              <span class="feature-icon">✓</span>
+              <span>Portion d'Alloco incluse 🍌</span>
+            </li>
+            <li class="disabled">
+              <span class="feature-icon">✗</span>
+              <span>Avocat ou Boisson offerte</span>
+            </li>
+          </ul>
+          <button class="btn btn-primary price-cta js-open-order" data-formula="premium" id="btn-order-premium">
+            Prendre le Premium
+          </button>
+        </div>
+        
+        <!-- Plan 3 -->
+        <div class="price-card reveal reveal-delay-2" id="price-giga">
+          <div class="price-header">
+            <h3 class="price-name">Le Garba Boss</h3>
+            <div class="price-amount">5 000 <span>FCFA</span></div>
+          </div>
+          <ul class="price-features">
+            <li>
+              <span class="feature-icon">✓</span>
+              <span>Thon XXL croustillant (Poisson entier)</span>
+            </li>
+            <li>
+              <span class="feature-icon">✓</span>
+              <span>Double ration d'attiéké de luxe</span>
+            </li>
+            <li>
+              <span class="feature-icon">✓</span>
+              <span>Assortiment complet (Oignon, Tomate, Piment)</span>
+            </li>
+            <li>
+              <span class="feature-icon">✓</span>
+              <span>Avocat entier + Alloco 🥑</span>
+            </li>
+            <li>
+              <span class="feature-icon">✓</span>
+              <span>Boisson fraîche au choix offerte 🥤</span>
+            </li>
+          </ul>
+          <button class="btn btn-secondary price-cta js-open-order" data-formula="giga" id="btn-order-giga">
+            Devenir Garba Boss
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Section Témoignages
+       ========================================================================== -->
+  <section class="section" id="temoignages">
+    <div class="container">
+      <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+        <span class="section-tag">Avis Clients</span>
+        <h2 class="section-title">Ce qu'en disent nos clients</h2>
+        <p class="section-desc">La satisfaction de nos clients est notre plus belle récompense. Voici les retours de nos habitués à Sassandra.</p>
+      </div>
+      
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal" id="review-1">
+          <div class="testi-quotes">“</div>
+          <div class="rating">★★★★★</div>
+          <p class="testi-text">
+            "Incroyable ! Enfin un service de Garba propre, bien emballé et livré chaud directement sur la plage de Sassandra. Le poisson thon est parfaitement croustillant et le piment est dosé à merveille !"
+          </p>
+          <div class="testi-user">
+            <div class="user-avatar">MK</div>
+            <div class="user-info">
+              <h4>Marie-Laure K.</h4>
+              <p>Sassandra Plage</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card reveal reveal-delay-1" id="review-2">
+          <div class="testi-quotes">“</div>
+          <div class="rating">★★★★★</div>
+          <p class="testi-text">
+            "Je commande chez GarbaExpress chaque midi au bureau. Plus besoin de faire la queue pendant 30 minutes au soleil. Le service digital est ultra fluide et le GarbaExpress Premium est tout simplement délicieux."
+          </p>
+          <div class="testi-user">
+            <div class="user-avatar">JD</div>
+            <div class="user-info">
+              <h4>Jean-Emmanuel D.</h4>
+              <p>Quartier Administratif</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card reveal reveal-delay-2" id="review-3">
+          <div class="testi-quotes">“</div>
+          <div class="rating">★★★★★</div>
+          <p class="testi-text">
+            "L'attiéké est d'une légèreté incroyable, pas du tout pâteux comme ailleurs. Et la portion d'alloco avec le thon croustillant est le combo parfait. Le vrai premium est enfin à Sassandra !"
+          </p>
+          <div class="testi-user">
+            <div class="user-avatar">FS</div>
+            <div class="user-info">
+              <h4>Fatou S.</h4>
+              <p>Quartier Gbougbo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Section FAQ
+       ========================================================================== -->
+  <section class="section" id="faq" style="background-color: var(--dark-surface); border-top: 1px solid var(--dark-border);">
+    <div class="container">
+      <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+        <span class="section-tag">FAQ</span>
+        <h2 class="section-title">Des questions ?</h2>
+        <p class="section-desc">Tout ce que vous devez savoir sur notre service de livraison digital GarbaExpress.</p>
+      </div>
+      
+      <div class="faq-container">
+        <div class="faq-item reveal" id="faq-1">
+          <button class="faq-header" id="btn-faq-1">
+            Dans quels quartiers de Sassandra livrez-vous ?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-body">
+            Nous livrons dans toute la ville de Sassandra : Centre-ville, Quartier Administratif, Gbougbo, Sassandra Plage, le Port, et jusqu'aux abords de Grand-Drewin. Nos livreurs connaissent parfaitement la ville pour vous livrer au plus vite.
+          </div>
+        </div>
+        
+        <div class="faq-item reveal" id="faq-2">
+          <button class="faq-header" id="btn-faq-2">
+            Quels sont les moyens de paiement acceptés ?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-body">
+            Nous acceptons le paiement en espèces (cash) directement à la livraison, ainsi que les transferts Mobile Money (Wave, Orange Money, MTN MoMo) lors de la réception de votre commande.
+          </div>
+        </div>
+        
+        <div class="faq-item reveal" id="faq-3">
+          <button class="faq-header" id="btn-faq-3">
+            D'où proviennent vos poissons et votre attiéké ?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-body">
+            Notre poisson thon est acheté frais chaque matin auprès des pêcheurs locaux du port de Sassandra. Notre attiéké de qualité supérieure est fabriqué par des coopératives locales de femmes de Sassandra pour garantir authenticité et fraîcheur.
+          </div>
+        </div>
+        
+        <div class="faq-item reveal" id="faq-4">
+          <button class="faq-header" id="btn-faq-4">
+            Comment est emballée la nourriture pour la livraison ?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-body">
+            L'hygiène est notre priorité absolue. Vos formules sont emballées dans des boîtes alimentaires étanches en carton kraft et transportées dans des sacs à dos isothermes scellés. Votre poisson reste croustillant et votre attiéké chaud jusqu'à votre table.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Section Contact
+       ========================================================================== -->
+  <section class="section" id="contact" style="position: relative;">
+    <div class="container">
+      <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+        <span class="section-tag">Nous Contacter</span>
+        <h2 class="section-title">Une envie pressante ?</h2>
+        <p class="section-desc">Vous souhaitez commander hors simulateur, organiser un événement ou poser une question ? Écrivez-nous directement.</p>
+      </div>
+      
+      <!-- Contact grid layout -->
+      <div class="hero-grid" style="grid-template-columns: 0.9fr 1.1fr; align-items: stretch; gap: 40px; margin-top: 20px;">
+        <div class="step-card reveal" style="display: flex; flex-direction: column; justify-content: center; gap: 24px; padding: 40px;">
+          <h3>GarbaExpress HQ</h3>
+          <p>Notre équipe est à votre écoute pour vous garantir la meilleure expérience Garba de Sassandra.</p>
+          
+          <div class="footer-contact" style="margin-top: 10px;">
+            <li style="margin-bottom: 20px;">
+              <span class="footer-contact-icon">📞</span>
+              <div>
+                <strong>Téléphones :</strong><br>
+                <a href="tel:0708878125" style="color: var(--primary); font-weight: 700;">07 08 87 81 25</a><br>
+                <a href="tel:0564354939" style="color: var(--primary); font-weight: 700;">05 64 35 49 39</a>
+              </div>
+            </li>
+            <li style="margin-bottom: 20px;">
+              <span class="footer-contact-icon">✉️</span>
+              <div>
+                <strong>Email :</strong><br>
+                <a href="mailto:faim@garbaexpress.ci">faim@garbaexpress.ci</a>
+              </div>
+            </li>
+            <li>
+              <span class="footer-contact-icon">📍</span>
+              <div>
+                <strong>Localisation :</strong><br>
+                Quartier Administratif, face à la Préfecture, Sassandra
+              </div>
+            </li>
+          </div>
+        </div>
+        
+        <div class="step-card reveal reveal-delay-1" style="padding: 40px;">
+          <h3 style="margin-bottom: 24px;">Envoyer un message</h3>
+          <form id="contact-form" class="newsletter-form" style="gap: 16px;">
+            <div class="newsletter-input-wrap">
+              <input type="text" id="contact-name" class="newsletter-input" placeholder="Votre nom complet *" required>
+            </div>
+            <div class="newsletter-input-wrap">
+              <input type="email" id="contact-email" class="newsletter-input" placeholder="Votre adresse email">
+            </div>
+            <div class="newsletter-input-wrap">
+              <textarea id="contact-message" class="newsletter-input" rows="4" placeholder="Votre message ou envie particulière... *" style="resize: none;" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="btn-submit-contact" style="width: 100%;">
+              Envoyer mon Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: About -->
+        <div class="footer-info">
+          <a href="#" class="logo">
+            <svg class="logo-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/>
+            </svg>
+            <span>Garba<span class="logo-accent">Express<span class="logo-dot">.</span></span></span>
+          </a>
+          <p class="footer-desc">
+            Le premier service 100 % digital de livraison de Garba premium à Sassandra. Redécouvrez le plat mythique ivoirien avec des critères d'hygiène et de qualité inégalés.
+          </p>
+          <div class="social-links">
+            <a href="https://facebook.com" class="social-icon" target="_blank" aria-label="Facebook">
+              <span style="font-weight: 800; font-family: sans-serif;">f</span>
+            </a>
+            <a href="https://instagram.com" class="social-icon" target="_blank" aria-label="Instagram">
+              <span style="font-weight: 800; font-family: sans-serif;">i</span>
+            </a>
+            <a href="https://wa.me/2250708878125" class="social-icon" target="_blank" aria-label="WhatsApp">
+              <span style="font-weight: 800; font-family: sans-serif;">w</span>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Col 2: Navigation Links -->
+        <div>
+          <h3 class="footer-title">Navigation</h3>
+          <ul class="footer-links">
+            <li><a href="#concept">Le Concept</a></li>
+            <li><a href="#tarifs">Nos Formules</a></li>
+            <li><a href="#temoignages">Témoignages</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Nous Contacter</a></li>
+          </ul>
+        </div>
+        
+        <!-- Col 3: Contact details -->
+        <div>
+          <h3 class="footer-title">Commandes</h3>
+          <ul class="footer-contact">
+            <li>
+              <span class="footer-contact-icon">📞</span>
+              <div>
+                <strong>Téléphones direct :</strong><br>
+                <a href="tel:0708878125">07 08 87 81 25</a><br>
+                <a href="tel:0564354939">05 64 35 49 39</a>
+              </div>
+            </li>
+            <li>
+              <span class="footer-contact-icon">📍</span>
+              <div>
+                <strong>Quartier HQ :</strong><br>
+                Administratif, face Préfecture, Sassandra
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Col 4: Newsletter -->
+        <div>
+          <h3 class="footer-title">Newsletter</h3>
+          <p class="footer-desc" style="font-size: 0.85rem;">Inscrivez-vous pour recevoir les promos chaudes du vendredi midi.</p>
+          <form class="newsletter-form" id="newsletter-form">
+            <div class="newsletter-input-wrap">
+              <input type="email" class="newsletter-input" placeholder="Votre email" aria-label="Votre email" required>
+              <button type="submit" class="newsletter-submit" aria-label="S'inscrire">
+                &rarr;
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      
+      <!-- Footer bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 GarbaExpress. Tous droits réservés. Design premium pour Sassandra.</p>
+        <p>100% Digital &middot; Garba d'Or 🇨🇮</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Interactive Order Simulator Modal
+       ========================================================================== -->
+  <div class="modal-overlay" id="order-modal">
+    <div class="modal-container">
+      <button class="modal-close" id="close-modal" aria-label="Fermer la modal">&times;</button>
+      
+      <div class="modal-content">
+        <!-- Form simulator screen -->
+        <form id="order-sim-form">
+          <h2 class="modal-title">Simulateur de Commande Digital 🌶️</h2>
+          
+          <!-- 1. Select Formula -->
+          <div class="sim-form-group">
+            <span class="sim-label">1. Choisissez votre Formule</span>
+            <div class="options-grid">
+              <div class="option-select js-formula-select" data-value="classique">
+                <h4>Le Dahico</h4>
+                <p>1 500 FCFA</p>
+              </div>
+              <div class="option-select js-formula-select" data-value="premium">
+                <h4>GarbaExpress</h4>
+                <p>3 000 FCFA</p>
+              </div>
+              <div class="option-select js-formula-select" data-value="giga">
+                <h4>Garba Boss</h4>
+                <p>5 000 FCFA</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 2. Select Chili Level -->
+          <div class="sim-form-group">
+            <span class="sim-label">2. Dosage du piment</span>
+            <div class="options-grid">
+              <button type="button" class="pepper-btn js-chili-btn" data-value="doux">
+                <span class="pepper-emoji">🌶️</span>
+                <span class="pepper-text">Doux (Léger)</span>
+              </button>
+              <button type="button" class="pepper-btn js-chili-btn selected" data-value="moyen">
+                <span class="pepper-emoji">🌶️🌶️</span>
+                <span class="pepper-text">Moyen (Ivoirien)</span>
+              </button>
+              <button type="button" class="pepper-btn js-chili-btn" data-value="extreme">
+                <span class="pepper-emoji">🌶️🌶️🌶️</span>
+                <span class="pepper-text">Garba-Fighter</span>
+              </button>
+            </div>
+          </div>
+          
+          <!-- 3. Add-ons -->
+          <div class="sim-form-group">
+            <span class="sim-label">3. Ajouter des Extras (+500 FCFA / unité)</span>
+            <div class="addons-list">
+              <div class="addon-item js-addon-item" data-value="avocat">
+                <div class="addon-info">
+                  <div class="addon-checkbox"></div>
+                  <span class="addon-name">Avocat frais crémeux 🥑</span>
+                </div>
+                <span class="addon-price">500 FCFA</span>
+              </div>
+              
+              <div class="addon-item js-addon-item" data-value="alloco">
+                <div class="addon-info">
+                  <div class="addon-checkbox"></div>
+                  <span class="addon-name">Portion de banane Alloco banane alloco 🍌</span>
+                </div>
+                <span class="addon-price">500 FCFA</span>
+              </div>
+              
+              <div class="addon-item js-addon-item" data-value="boisson">
+                <div class="addon-info">
+                  <div class="addon-checkbox"></div>
+                  <span class="addon-name">Boisson rafraîchissante 🥤</span>
+                </div>
+                <span class="addon-price">500 FCFA</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 4. Delivery Infos -->
+          <div class="sim-form-group">
+            <span class="sim-label">4. Informations de livraison à Sassandra</span>
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+              <input type="tel" id="order-phone" class="modal-input" placeholder="Votre numéro de Téléphone (ex: 0708878125) *" required>
+              <input type="text" id="order-address" class="modal-input" placeholder="Quartier / Précision de livraison (ex: Sassandra Plage, face Hôtel) *" required>
+            </div>
+          </div>
+          
+          <!-- Order Summary -->
+          <div class="order-summary">
+            <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 15px; border-bottom: 1px solid var(--dark-border); padding-bottom: 8px;">Résumé de la commande</h3>
+            <div class="summary-row">
+              <span id="summary-formula-name">Le GarbaExpress (Premium)</span>
+              <span id="summary-formula-price">3 000 FCFA</span>
+            </div>
+            
+            <div id="summary-addons-list">
+              <!-- Addons inserted dynamically -->
+            </div>
+            
+            <div class="summary-row total">
+              <span>Total Estimé</span>
+              <span id="summary-total-price" class="total-price">3 000 FCFA</span>
+            </div>
+          </div>
+          
+          <button type="submit" class="btn btn-accent" id="btn-submit-order" style="width: 100%;">
+            Envoyer ma Commande Express
+          </button>
+        </form>
+        
+        <!-- Success screen -->
+        <div class="success-screen" id="order-success-screen">
+          <div class="success-icon">✓</div>
+          <h2 class="success-title">Commande Reçue !</h2>
+          <p class="success-desc">
+            Votre Garba premium est déjà en cours de préparation. Notre livreur partira immédiatement.
+          </p>
+          
+          <div class="order-summary" style="width: 100%; text-align: left;">
+            <div class="summary-row" style="margin-bottom: 12px;">
+              <span>Référence commande :</span>
+              <strong id="success-order-ref" style="color: var(--light);">GE-489374</strong>
+            </div>
+            <div class="summary-row" style="margin-bottom: 12px;">
+              <span>Quartier de livraison :</span>
+              <strong id="success-order-quartier" style="color: var(--light);">Sassandra Plage</strong>
+            </div>
+            <div class="summary-row" style="margin-bottom: 0;">
+              <span>Moyen de paiement :</span>
+              <strong style="color: var(--primary);">Espèces ou Mobile Money</strong>
+            </div>
+          </div>
+          
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 24px;">
+            Un livreur vous contactera par téléphone d'une minute à l'autre.
+          </p>
+          
+          <div style="display: flex; flex-direction: column; gap: 12px; width: 100%;">
+            <a href="https://wa.me/2250708878125" target="_blank" class="btn btn-primary" style="width: 100%;">
+              Suivre sur WhatsApp (07 08 87 81 25)
+            </a>
+            <button type="button" class="btn btn-secondary" id="close-success-btn" style="width: 100%;">
+              Fermer la fenêtre
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
